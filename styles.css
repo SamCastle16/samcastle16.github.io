@@ -432,7 +432,7 @@ button:active {
     grid-row-start: 1;
     grid-row-end: 2;
     display: flex;
-    background-image: url(img/DELIVERY-RADICAL-Y-NORMAL.png);
+    background-image: url();
     background-position: center;
     background-repeat: no-repeat;
     justify-content: center;
