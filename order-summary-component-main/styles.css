@@ -1,0 +1,170 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Red Hat Display', sans-serif;
+	font-size: 16px;
+}
+
+body {
+  background-color: hsl(225, 100%, 94%);
+  background-image: url(images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  /*position: relative;*/
+}
+
+.hero {
+	height: 550px;
+	width: 350px;
+	/*height: 90%;
+	width: 25%;*/
+	background-color: #fff;
+	border-radius: 1em;
+	overflow: hidden;
+	margin-bottom: 1em;
+	box-shadow: 0 15px 20px 0 hsl(224, 23%, 85%);
+}
+
+.hero-img {
+	background-image: url(images/illustration-hero.svg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100%;
+	height: 30%;
+}
+
+.hero-text {
+	height: auto;
+	width: 100%;
+	padding: 2em;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.hero-text h1{
+	font-size: 1.5em;
+	font-weight: 900;
+	margin-bottom: .6em;
+}
+
+.hero-text p{
+	font-size: 14px;
+	font-weight: 500;
+	color: #828282;
+	margin-bottom: 1.5em;
+}
+
+.plan-container {
+	width: 100%;
+	height: 5em;
+	margin: 0;
+	background-color: hsl(225, 100%, 98%);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-radius: .6em;
+	padding: 1.2em;
+	margin-bottom: 1.5em;
+}
+
+.plan-container img {
+	width: 2.5em;
+}
+
+.plan-container .text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	margin-right: 3em;
+	line-height: 1.3em;
+}
+
+.plan-container .text h2, p {
+	font-size: 13px;
+}
+.plan-container .text p {
+	margin-bottom: 0;
+}
+
+.plan-container .text h2 {
+	font-weight: 900;
+}
+
+.plan-container a {
+	font-size: 12px;
+	font-weight: 700;
+	transition: .4s;
+}
+
+.plan-container a:hover {
+	color: #8164FF;
+	text-decoration: none;
+}
+
+.button {
+	width: 100%;
+	height: 2.5em;
+	border: none;
+	border-radius: .6em;
+}
+
+.button a {
+	text-decoration: none;
+	font-size: 13px;
+	font-weight: 700;
+}
+
+.button-1 a {
+	color: #fff;
+}
+
+.button-1 {
+	background-color: hsl(245, 75%, 52%);
+	margin-bottom: 1.5em;
+	box-shadow: 0 15px 20px 0 hsl(224, 23%, 80%);
+	transition: .4s;
+}
+
+.button-1:hover {
+	background-color: #8164FF;
+}
+
+.button-2 {
+	background-color: transparent;
+}
+
+.button-2 a {
+	color: #828282;
+	transition: .4s;
+}
+
+.button-2 a:hover {
+	color: #000;
+}
+
+.attribution, .attribution a {
+	font-size: 12px;
+}
+
+@media (max-width:460px) {
+    .hero {
+        margin: 1em 1.5em;
+    }
+
+    body {
+        background: url(images/pattern-background-mobile.svg) no-repeat, contain, hsl(225, 100%, 94%);
+    }
+}
